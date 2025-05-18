@@ -7,53 +7,89 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f7f3;
-      color: #222;
+      font-family: 'Georgia', serif;
+      background-color: #000;
+      color: #f0e6d2;
     }
+
     header {
-      background: url('https://images.unsplash.com/photo-1581579185169-7bf9cbae52c2?fit=crop&w=1470&q=80') no-repeat center center/cover;
+      background: url('https://images.unsplash.com/photo-1618354691373-6c0e86859f5a?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
       text-align: center;
       color: white;
-      padding: 80px 20px;
+      padding: 100px 20px;
     }
+
     header h1 {
-      background-color: rgba(0,0,0,0.6);
+      background-color: rgba(0, 0, 0, 0.7);
       display: inline-block;
-      padding: 14px 30px;
+      padding: 16px 40px;
       border-radius: 10px;
-      font-size: 32px;
+      font-size: 36px;
+      letter-spacing: 2px;
     }
+
     nav {
       background-color: #b8860b;
       text-align: center;
-      padding: 12px;
+      padding: 14px 0;
     }
+
     nav a {
-      color: white;
-      margin: 0 15px;
+      color: #000;
+      margin: 0 18px;
       text-decoration: none;
       font-weight: bold;
+      font-size: 16px;
     }
+
     section {
-      padding: 60px 20px;
+      padding: 80px 20px;
       text-align: center;
     }
-    .highlight {
-      color: #b8860b;
-      font-weight: bold;
+
+    section:nth-child(even) {
+      background: #111;
     }
+
+    h2 {
+      color: #d4af37;
+      margin-bottom: 20px;
+    }
+
     .contact-box {
-      background-color: #fff3d4;
+      background-color: #1a1a1a;
       padding: 30px;
-      border-radius: 10px;
+      border: 1px solid #d4af37;
       display: inline-block;
+      border-radius: 10px;
+      color: #f0e6d2;
     }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 280px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid #d4af37;
+    }
+
     footer {
-      background-color: #333;
-      color: white;
+      background-color: #111;
+      color: #aaa;
       text-align: center;
-      padding: 20px;
+      padding: 25px;
+      font-size: 14px;
+    }
+
+    a {
+      color: #ffd700;
     }
   </style>
 </head>
@@ -61,29 +97,33 @@
 
 <header>
   <h1>Armenian Pride Collection LLC</h1>
-  <p>Fine Culture. Timeless Elegance.</p>
+  <p>Luxury, Heritage, Identity</p>
 </header>
 
 <nav>
   <a href="#about">About</a>
-  <a href="#collection">Collection</a>
+  <a href="#gallery">Gallery</a>
   <a href="#mission">Mission</a>
   <a href="#contact">Contact</a>
 </nav>
 
 <section id="about">
   <h2>About Us</h2>
-  <p>Based in <span class="highlight">Sherman Oaks, California</span>, Armenian Pride Collection LLC celebrates heritage through fashion, art, and craftsmanship.</p>
+  <p>Based in <strong>Sherman Oaks, California</strong>, Armenian Pride Collection LLC honors Armenian culture and heritage through luxury design, traditional symbols, and premium handcrafted pieces.</p>
 </section>
 
-<section id="collection">
-  <h2>Our Collection</h2>
-  <p>From traditional Armenian patterns to modern elegance, we bring culture and creativity into every piece we curate.</p>
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1619983081563-430f636ed3bb?fit=crop&w=700&q=80" alt="Item 1">
+    <img src="https://images.unsplash.com/photo-1619981801696-106a88009ac5?fit=crop&w=700&q=80" alt="Item 2">
+    <img src="https://images.unsplash.com/photo-1622459232062-e79cbf8e6a7d?fit=crop&w=700&q=80" alt="Item 3">
+  </div>
 </section>
 
 <section id="mission">
   <h2>Our Mission</h2>
-  <p>To promote and preserve Armenian identity through high-quality, elegant collections that speak to both tradition and modern luxury.</p>
+  <p>To empower identity and culture through modern Armenian artistry, and to create exclusive, meaningful fashion rooted in pride and legacy.</p>
 </section>
 
 <section id="contact">
@@ -96,7 +136,7 @@
 </section>
 
 <footer>
-  <p>&copy; 2025 Armenian Pride Collection LLC. All rights reserved.</p>
+  <p>&copy; 2025 Armenian Pride Collection LLC. Designed with elegance and pride.</p>
 </footer>
 
 </body>
